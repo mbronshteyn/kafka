@@ -28,6 +28,10 @@ dependencies {
     //avro-serializer
     implementation( "io.confluent:kafka-avro-serializer:5.5.1")
 
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+    implementation 'org.slf4j:slf4j-reload4j:2.0.7'
+    implementation 'ch.qos.logback:logback-classic:0.9.26'
+
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.4'
     annotationProcessor 'org.projectlombok:lombok:1.18.4'
