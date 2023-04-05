@@ -32,8 +32,6 @@ public class GreetingProducer {
         var metadata = producer.send(producerRecord).get();
 
         log.info("metadata: {}", metadata);
-        System.out.println(metadata);
-
     }
 
     private static Greeting buildGreeting(String message) {

@@ -40,7 +40,6 @@ public class GreetingConsumer {
                 Greeting greeting = decodeAvroGreeting(consumerRecord.value());
 
                 log.info("greeting: {}", greeting);
-                System.out.println(greeting.toString());
             }
         }
 
