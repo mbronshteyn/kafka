@@ -22,5 +22,4 @@ rootProject.name = 'kafka'
 include 'greeting-app'
 include 'coffee-orders-service'
 include 'schemas'
-include 'coffee-orders-consumer'
 
