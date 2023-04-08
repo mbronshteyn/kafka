@@ -45,7 +45,7 @@ public class Main {
         KTable<String, Integer> aggregatedTable = groupedStream
                 .aggregate(
                         () -> 0,
-                        (aggKey, newValue, aggValue) -> aggValue + Integer.parseInt(newValue),
+                        (aggKey, newValue, aggValue) -> aggValue + Integer.parseInt(newValue.trim()),
                         Materialized.with(Serdes.String(), Serdes.Integer()));
 
         KStream<String, Integer> stringIntegerKStream = aggregatedTable.toStream();
@@ -60,6 +60,7 @@ public class Main {
         final Topology topology = builder.build();
         final KafkaStreams streams = new KafkaStreams(topology, props);
         // Print the topology to the console.
+        // in real prod app should be a logger
         System.out.println(topology.describe());
         final CountDownLatch latch = new CountDownLatch(1);
 

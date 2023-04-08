@@ -15,3 +15,9 @@ Avro Schemas to work with Coffee Service
 
 ## [coffee-orders-service](https://github.com/mbronshteyn/kafka/tree/main/coffee-orders-service)
 Consumer and Producer classes which are using Coffee Order schemas.  Two versions implemented: with and without Confluent Service Registry.
+
+## [aggregation-app](https://github.com/mbronshteyn/kafka/tree/main/aggregation-app)
+
+This is an example on how to use Kafka Aggregation streams.  
+
+Please get more details inside the module README file
