@@ -1,0 +1,19 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-streams:2.2.1'
+    implementation 'org.apache.kafka:kafka-clients:2.2.1'
+    testImplementation 'junit:junit:4.12'
+}
+
+apply plugin: 'idea'
+
+application {
+    mainClassName = 'com.mbronshteyn.aggregation.streams.Main'
+}
