@@ -21,3 +21,7 @@ Consumer and Producer classes which are using Coffee Order schemas.  Two version
 This is an example on how to use Kafka Aggregation streams.  
 
 Please get more details inside the module README file
+
+## [mock-testng](https://github.com/mbronshteyn/kafka/tree/main/mock-testing)
+
+Kafka provides Mock classes for Producer, Consumer and Streams to allow unit testing without Kafka.  This module shows their use
