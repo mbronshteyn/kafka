@@ -23,4 +23,5 @@ include 'greeting-app'
 include 'coffee-orders-service'
 include 'schemas'
 include 'aggregation-app'
+include 'mock-testing'
 
